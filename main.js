@@ -11,10 +11,10 @@ function setup() {
 }
 function draw() {
     image(Cam, 0, 0, 300, 300);
+    classifier.classify(Cam, gotresult);
 }
 function modelloaded(){
     console.log("Model Loaded!!");
-    classifier.classify(Cam, gotresult);
 }
 function gotresult(error, results) {
     if (error) {
@@ -23,6 +23,6 @@ function gotresult(error, results) {
     else{
         console.log(results);
         document.getElementById("R_N").innerHTML=results[0].label;
-        document.getElementById("R_A").innerHTML=results[0].confidence;
+        document.getElementById("R_A").innerHTML=results[0].confidence.toFixed(2);
     }
 }
