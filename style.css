@@ -1,0 +1,34 @@
+.heading{
+    font-size: 25;
+    width: 100%;
+    margin: 0px;
+    box-shadow: 5px 5px 5px goldenrod;
+}
+.heading_div{
+    box-shadow: 5px 5px 5px goldenrod;
+    background-color: honeydew;
+    color: darkturquoise;
+    border-radius: 15px;
+    float: none;
+    padding: 10px;
+}
+.heading_div2{
+    font-size: 18px;
+}
+.R_Name, .R_Accu{
+    font-size: 20px;
+    box-shadow: 5px 5px 5px blueviolet;
+}
+.Footer{
+    position: fixed;
+    bottom: 0;
+    background-color: brown;
+    line-height: 2;
+    width: 100%;
+    color: cornsilk;
+    text-align: center;
+}
+canvas{
+    border: 2px dashed blue;
+    border-radius: 10px;
+}
